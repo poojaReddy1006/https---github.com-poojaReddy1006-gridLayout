@@ -269,13 +269,11 @@ a {
         border-radius: 10px;
     }
 
-
-
     nav {
         display: flex;
         gap: 10px;
-        justify-content: flex-start;
         padding: 0 10px;
+        justify-content: flex-start;
     }
 
     nav a {
@@ -285,5 +283,5 @@ a {
         white-space: nowrap;
         font-weight: bold;
     }
-    
+
 }
