@@ -285,8 +285,5 @@ a {
         white-space: nowrap;
         font-weight: bold;
     }
-
-    #projects {
-        display: grid;
-    }
+    
 }
