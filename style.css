@@ -78,7 +78,7 @@ nav {
 nav a {
     flex: 1;
     text-align: center;
-    text-decoration: none;
+    text-decoration: underline;
     font-size: 18px;
     color: #37288c;
     padding: 10px;
@@ -271,27 +271,6 @@ a {
         background-color: #5d81c154;
     }
 
-    #nav {
-        overflow-x: auto;
-        white-space: nowrap;
-        scrollbar-width: thin;
-        scrollbar-color: gray lightgray;
-
-        padding: 10px 0;
-    }
-
-    #nav::-webkit-scrollbar {
-        height: 8px;
-    }
-
-    #nav::-webkit-scrollbar-track {
-        background: lightgray;
-    }
-
-    #nav::-webkit-scrollbar-thumb {
-        background: gray;
-        border-radius: 10px;
-    }
 
     nav {
         display: flex;
@@ -306,6 +285,43 @@ a {
         font-size: 16px;
         white-space: nowrap;
         font-weight: bold;
+        text-decoration: underline;
     }
+
+    #nav {
+        overflow-x: auto;
+        white-space: nowrap;
+        scrollbar-width: auto;
+        scrollbar-color: black black;
+        padding: 10px 0;
+        position: relative;
+    }
+
+    #nav::-webkit-scrollbar {
+        height: 12px;
+        background: transparent;
+    }
+
+    #nav::-webkit-scrollbar-track {
+        background: black;
+        border-bottom: 3px solid black;
+    }
+
+    #nav::-webkit-scrollbar-thumb {
+        background: black;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    #nav:hover::-webkit-scrollbar {
+        display: block !important;
+        opacity: 1 !important;
+    }
+
+    #nav::-webkit-scrollbar-thumb:hover {
+        background: black;
+    }
+
+
 
 }
