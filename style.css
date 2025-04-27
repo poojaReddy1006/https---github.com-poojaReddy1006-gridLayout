@@ -15,7 +15,6 @@ h2 {
 }
 
 
-
 .container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -63,26 +62,22 @@ h2 {
     grid-area: nav;
     padding: var(--main-padding);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    place-items: center;
 
+}
+
+.dispalySections
+{
+    display: contents;
 }
 
 nav {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-nav a {
-    flex: 1;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 18px;
-    color: #37288c;
-    padding: 10px;
-    font-weight: bold;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: start;
+    gap: 113px;
 }
 
 nav a:hover {
@@ -96,7 +91,14 @@ nav a:hover {
     display: grid;
     justify-content: left;
     align-items: left;
+    background-color: #5d81c154;
 
+
+}
+
+.mainProfile
+{
+    background-color: #5d81c154;
 }
 
 #about {
@@ -149,11 +151,11 @@ nav a:hover {
 
 .profileImage {
     width: 309px;
+    padding:5%;
 }
 
 .location {
-    display: flex;
-    align-items: center;
+    display: grid;
     gap: 8px;
 }
 
@@ -167,9 +169,7 @@ nav a:hover {
 
 
 .phone-Info {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    display: grid;
     gap: 8px;
 }
 
@@ -184,8 +184,7 @@ nav a:hover {
 
 
 .skillbar {
-    display: flex;
-    align-items: center;
+    display: grid;
     margin-bottom: 10px;
 }
 
@@ -200,10 +199,24 @@ progress {
 
 .projectdetails {
     padding-left: 15px;
+    width: 77%;
+    display: inline-block;
 }
 
 .project1 {
-    display: inline-flex;
+   width: 100%;
+   overflow: hidden;
+}
+
+.proStyle
+{
+    margin-bottom: 16%;
+}
+
+.projectImage
+{
+    display: inline-block;
+    width: 20%;
 }
 
 .machinelearningImg {
@@ -271,14 +284,6 @@ a {
         background-color: #5d81c154;
     }
 
-
-    nav {
-        display: flex;
-        gap: 10px;
-        padding: 0 10px;
-        justify-content: flex-start;
-    }
-
     nav a {
         display: inline-block;
         padding: 10px 15px;
@@ -287,6 +292,12 @@ a {
         font-weight: bold;
         text-decoration: underline;
     }
+    
+    .innerNav
+    {
+        display: inline-block;
+    }
+
 
     #nav {
         overflow-x: auto;
